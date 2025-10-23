@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendarização - SportCalendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calendario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-calendar-alt"></i> SportCalendar</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="calendario.html" class="active">Calendarização</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Calendarização Desportiva</h1>
+            <p>Encontra todos os eventos dos teus desportos favoritos</p>
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="sport">Desporto:</label>
+                    <select id="sport">
+                        <option value="all">Todos os Desportos</option>
+                        <option value="football">Futebol</option>
+                        <option value="basketball">Basquetebol</option>
+                        <option value="volleyball">Voleibol</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="league">Liga/Competição:</label>
+                    <select id="league">
+                        <option value="all">Todas as Ligas</option>
+                        <option value="premier">Premier League</option>
+                        <option value="liga">Liga Portugal</option>
+                        <option value="nba">NBA</option>
+                        <option value="champions">Liga dos Campeões</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="date">Data:</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="filter-group">
+                    <label for="team">Equipa:</label>
+                    <input type="text" id="team" placeholder="Nome da equipa">
+                </div>
+                <button class="filter-btn" id="applyFilters">Aplicar Filtros</button>
+                <button class="filter-btn reset" id="resetFilters">Limpar Filtros</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="calendar">
+        <div class="container">
+            <div class="calendar-header">
+                <h2>Eventos</h2>
+                <div class="view-options">
+                    <button class="view-btn active" data-view="list"><i class="fas fa-list"></i> Lista</button>
+                    <button class="view-btn" data-view="grid"><i class="fas fa-th"></i> Grelha</button>
+                </div>
+            </div>
+
+            <div class="events-list" id="eventsContainer">
+                <!-- Eventos vão ser populados com javacsript aqui -->
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn" id="prevPage"><i class="fas fa-chevron-left"></i> Anterior</button>
+                <span class="page-info">Página <span id="currentPage">1</span> de <span id="totalPages">5</span></span>
+                <button class="page-btn" id="nextPage">Próxima <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SportCalendar</h3>
+                    <p>O teu companheiro para nunca perderes um jogo dos teus desportos favoritos.</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="calendario.html">Calendarização</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Desportos</h4>
+                    <ul>
+                        <li><a href="#">Futebol</a></li>
+                        <li><a href="#">Basquetebol</a></li>
+                        <li><a href="#">Voleibol</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Subscreve à Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="O teu email" required>
+                        <button type="submit">Subscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SportCalendar. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="calendario.js"></script> -->
+</body>
+</html>
