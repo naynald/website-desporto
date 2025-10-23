@@ -1,4 +1,4 @@
-const API_KEY = '123'; // API Key gratuita para testes
+const API_KEY = '3'; // API Key gratuita para testes
 const BASE_URL = 'https://www.thesportsdb.com/api/v1/json';
 
 // Estado da aplicação
