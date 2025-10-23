@@ -1,4 +1,3 @@
-/* Reset e estilos gerais */
 * {
     margin: 0;
     padding: 0;
@@ -344,7 +343,7 @@ nav ul li a.active::after {
     border-color: #e94560;
 }
 
-/* FAQ Section */
+
 .faq {
     padding: 5rem 0;
     background-color: #f8f9fa;
@@ -395,7 +394,6 @@ nav ul li a.active::after {
     max-height: 200px;
 }
 
-/* Footer */
 footer {
     background-color: #1a1a2e;
     color: white;
